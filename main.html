@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Search</title>
+  </head>
+  <body>
+    <h2>Student Management</h2>
+    <select name="search" id="search">
+      <option value="0">Student Name</option>
+      <option value="1">Student ID</option>
+      <option value="2">University</option>
+      <option value="3">Major</option>
+    </select>
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Search for students.."
+    />
+
+    <table id="myTable">
+      <tr class="header">
+        <th>Name</th>
+        <th>ID</th>
+        <th>University</th>
+        <th>Major</th>
+        <th>Subjects</th>
+        <th>Grades</th>
+        <th>Attendance</th>
+      </tr>
+      <tbody>
+        <tr>
+          <td rowspan="5">testing</td>
+          <td rowspan="5">123123</td>
+          <td rowspan="5">manchester</td>
+          <td rowspan="5">CS</td>
+          <td>Biology</td>
+          <td>12</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>Computer Science</td>
+          <td>12</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td>12</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td>12</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td>12</td>
+          <td>90%</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td rowspan="5">Checking</td>
+          <td rowspan="5">123123</td>
+          <td rowspan="5">liverpool</td>
+          <td rowspan="5">CS</td>
+          <td>Biology</td>
+          <td>12</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>Computer Science</td>
+          <td>12</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td>12</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td>12</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td>12</td>
+          <td>90%</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script src="index.js"></script>
+</html>
