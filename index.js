@@ -55,3 +55,27 @@ function CompareStudentID(a, b) {
   }
   return 0;
 }
+
+function myFunction() {
+  const input = document.getElementById("myInput");
+  const filter = input.value.toUpperCase();
+  let tr = myTable.getElementsByTagName("tr");
+  let tb = myTable.getElementsByTagName("tbody");
+  const header = document.getElementById("search");
+  const option = header.value;
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (let i = 1; i < tb.length; i++) {
+    tr = tb[i].getElementsByTagName("tr")[0];
+    const td = tr.getElementsByTagName("td")[option];
+    if (td) {
+      txtValue = td.innerText.toUpperCase();
+
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tb[i].style.display = "";
+      } else {
+        tb[i].style.display = "none";
+      }
+    }
+  }
+}
